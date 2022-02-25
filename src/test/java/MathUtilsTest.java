@@ -10,6 +10,11 @@ class MathUtilsTest {
         System.out.println("This is execute before the test class initialization ");
     }
 
+    @AfterAll
+    static void lastCleanUp(){
+        System.out.println("This is executes after ");
+    }
+
     @BeforeEach
     void setup(){
         System.out.println("This is executed before every test");
